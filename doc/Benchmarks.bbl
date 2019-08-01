@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{Chollet18}
+Fran\c{c}ois Chollet.
+\newblock {\em Deep Learning with Python}.
+\newblock Manning Publications Co., Shelter Island, New York, 2018.
+
+\bibitem{Goodfellow16}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock The MIT Press, Cambridge, Massachusetts, 2016.
+
+\bibitem{JetsonNano19}
+{NVIDIA}.
+\newblock Jetson nano homepage.
+\newblock \url
+  {https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit}.
+
+\bibitem{Raschka16}
+Sebastian Raschka.
+\newblock {\em Python Machine Learning}.
+\newblock Packt Publishing Ltd., Birmingham, United Kingdom, 2016.
+
+\end{thebibliography}

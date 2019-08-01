@@ -52,7 +52,7 @@ __pycache__
 # These are temporary LaTeX files
 *.aux
 *.blg
-*.bbl
+#*.bbl
 *.toc
 *.eps
 *.ilg
@@ -106,4 +106,7 @@ readme.txt
 *.files
 *.includes
 *.config
+
+# And here are the local customizations
+doc/Benchmarks.log
 
