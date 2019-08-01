@@ -1,0 +1,8 @@
+Running mnistNaive on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+GPU acceleration is not available
+
+
+Training time:  30.336 s
+Test time:       0.683 s
+Classification accuracy on test data: 98.23 %

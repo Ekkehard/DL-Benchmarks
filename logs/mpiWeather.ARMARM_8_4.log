@@ -1,0 +1,27 @@
+Running mpiWeather on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training size:  200000 samples
+Test size:      120406 samples
+Training time: 6465.983 s
+Test time:     331.552 s
+
+
+Net architecture:
+Input Shape:  (None, None, 21)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+gru_1 (GRU)                  (None, 32)                5184      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 5,217
+Trainable params: 5,217
+Non-trainable params: 0
+_________________________________________________________________

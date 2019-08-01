@@ -1,0 +1,10 @@
+Running reuters on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training time:   9.858 s
+Test time:       0.317 s
+Classification accuracy on test data: 78.90 %

@@ -1,0 +1,27 @@
+Running mpiWeather on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:  200000 samples
+Test size:      120406 samples
+Training time: 897.726 s
+Test time:      46.890 s
+
+
+Net architecture:
+Input Shape:  (None, None, 21)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+gru_1 (GRU)                  (None, 32)                5184      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 5,217
+Trainable params: 5,217
+Non-trainable params: 0
+_________________________________________________________________

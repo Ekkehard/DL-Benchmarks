@@ -1,0 +1,30 @@
+Running reuters on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:    8982 samples
+Test size:        2246 samples
+Training time:   9.511 s
+Test time:       0.273 s
+Classification accuracy on test data: 78.94 %
+
+
+Net architecture:
+Input Shape:  (None, 10000)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 64)                640064    
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3 (Dense)              (None, 46)                2990      
+=================================================================
+Total params: 647,214
+Trainable params: 647,214
+Non-trainable params: 0
+_________________________________________________________________

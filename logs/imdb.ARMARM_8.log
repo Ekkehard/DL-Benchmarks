@@ -1,0 +1,30 @@
+Running imdb on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training size:   25000 samples
+Test size:       25000 samples
+Training time:  24.929 s
+Test time:       7.944 s
+Classification accuracy on test data: 88.32 %
+
+
+Net architecture:
+Input Shape:  (None, 10000)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 16)                160016    
+_________________________________________________________________
+dense_2 (Dense)              (None, 16)                272       
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 17        
+=================================================================
+Total params: 160,305
+Trainable params: 160,305
+Non-trainable params: 0
+_________________________________________________________________

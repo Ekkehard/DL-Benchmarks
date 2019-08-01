@@ -1,0 +1,28 @@
+Running mnist1D on AMD Phenom(tm) II X6 1055T Processor, 64 bits
+with 6 cores, running at 803.5180 MHz
+Installed memory: 8 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time:  33.210 s
+Test time:       0.770 s
+Classification accuracy on test data: 98.00 %
+
+
+Net architecture:
+Input Shape:  (None, 784)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 512)               401920    
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                5130      
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________

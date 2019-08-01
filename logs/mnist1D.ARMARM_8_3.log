@@ -1,0 +1,28 @@
+Running mnist1D on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time:  67.816 s
+Test time:       1.817 s
+Classification accuracy on test data: 98.02 %
+
+
+Net architecture:
+Input Shape:  (None, 784)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 512)               401920    
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                5130      
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________

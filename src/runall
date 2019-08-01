@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for i in 1 2 3 4; do
+    ./benchmark.py dogsVsCats $i
+    ./benchmark.py imdbEmbedded $i
+    ./benchmark.py imdb $i
+    ./benchmark.py mnist1D $i
+    ./benchmark.py mnist2D $i
+    ./benchmark.py mpiWeatherConv $i
+    ./benchmark.py mpiWeather $i
+    ./benchmark.py reuters $i
+done
+
+exit 0

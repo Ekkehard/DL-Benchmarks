@@ -1,0 +1,67 @@
+0. This is a contractual arrangement regarding the use of the software contained
+in this directory and, if they exist, its sub-directories between the user who
+obtained that software by whatever means (hereinafter referred to as "You", or
+"Your") and Wolf-Ekkehard Blanz, the developer of this software, of legal age
+and resident at 1536 Queenstown Court, Sunnyvale, CA 94087-4442, U.S.A.
+(hereinafter referred to as "I", "Me", or "My").
+
+1. Unless specifically noted otherwise, the software contained in this
+directory and its sub-directories (the Program) was developed solely by Me.  All
+of My development was done on My own time and equipment. It does not relate to
+any work that I am or was doing for the particular employer or employers (if
+any) with which I was in a contractual relationship during the time of the
+development of the Program. Therefore, according to My interpretation of all
+contracts under which I was bound during the time of the development of the
+Program, which is made in good faith and after careful evaluation of such
+contracts, none of My employers, current (if any) or past, can claim any rights
+to the Program as authored by Me based on such employment contracts.  Hence, the
+rights to use, redistribute, or modify the Program as authored by Me are
+determined solely by Me, and they are as stated below.
+
+2. The Program is free software: You can redistribute it and/or modify it under
+the terms of the Apache License (APL) as published by the The Apache Software
+Foundation, either Version 2.0 of the License, or (at Your option) any later
+version.  If work or derived work of other authors has been used, any and all
+such work is also governed by the terms of the Apache License (APL) Version 2.0
+or above.
+
+3. Even though reasonable efforts have been made to investigate whether the use
+of the Program could violate intellectual third party property rights such as
+copyright, trademark or patent protections, and no such violation was found at
+the time of release of the Program, My liability is limited as outlined under
+"Limitation of Liability" of the Apache License (APL) Version 2.0 or above.  No
+patent protection of any of My intellectual property that went into the Program
+was sought.  If You use the Program, You do so at Your own risk.
+
+4. If the terms of APL version 2.0 (or later) are not acceptable to You, You
+can contact Me to make special bilateral arrangements instead.  However, the
+rights of anybody else to use the Program as authored by Me under the terms of
+APL version 2.0 (or later), commercially or not, must remain untouched by any
+such arrangement.  Should an arrangement between You and Me include Me modifying
+the Program, such modification shall then be considered a different program and
+shall not be part of the original Program.  Moreover, the rights of any other
+author or authors who contributed to the Program (if any) can not be touched by
+such arrangements without their explicit written consent.  All such bilateral
+arrangements must be agreed upon in writing.
+
+5. All information which is produced as the intended output from the Program
+does not automatically fall under the copyright of the Program, but belongs to
+whomever generated it and may be distributed freely or sold commercially under
+conditions determined solely by the owner.
+
+6. The Program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the Apache License for more details.
+
+7. You should have received a copy of the Apache License as file LICENSE as part
+of this documentation.  If not, please see the web page at
+<http://www.apache.org/licenses/LICENSE-2.0>.
+
+8. The effective date of this arrangement is the date at which You obtained a
+copy, electronic or otherwise, of the Program.
+
+9. If You do not agree with the terms as outlined above, or as negotiated
+bilaterally between You and Me and agreed upon in writing, You must not use or
+modify the Program, and You have to completely remove all instances of the
+Program and any derivative work from Your computer and all storage media in
+Your possession.

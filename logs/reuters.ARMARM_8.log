@@ -1,0 +1,10 @@
+Running reuters on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training time:  22.230 s
+Test time:       0.785 s
+Classification accuracy on test data: 78.98 %

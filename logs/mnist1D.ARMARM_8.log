@@ -1,0 +1,10 @@
+Running mnistNaive on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training time:  67.395 s
+Test time:       1.741 s
+Classification accuracy on test data: 97.82 %

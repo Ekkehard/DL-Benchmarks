@@ -1,0 +1,40 @@
+Running mnist2D on ARMv8 Processor rev 1 (v8l), 64 bits
+with 4 cores, running at 1.4280 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float16
+NVIDIA GPU acceleration is available
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time: 281.439 s
+Test time:       5.793 s
+Classification accuracy on test data: 99.19 %
+
+
+Net architecture:
+Input Shape:  (None, 28, 28, 1)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 26, 26, 32)        320       
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 13, 13, 32)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 11, 11, 64)        18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 5, 5, 64)          0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 3, 3, 64)          36928     
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 576)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                36928     
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                650       
+=================================================================
+Total params: 93,322
+Trainable params: 93,322
+Non-trainable params: 0
+_________________________________________________________________

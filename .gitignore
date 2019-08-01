@@ -1,0 +1,109 @@
+#
+# .gitignore Implementation
+#
+# Version   : 2.2.0
+#
+# Purpose   : Define all files to be ignored by git
+#
+# Comments  :
+#
+# Known Bugs: none
+#
+# Author    : W. Ekkehard Blanz <Ekkehard.Blanz@gmail.com> (C) 2013-2019
+#
+# Copyright : See COPYING file that comes with this distribution
+#
+# File history:
+#
+#     Date          | Author            | Modification
+#   ----------------+-------------------+---------------------------------------
+#   Sun Apr 14 2013 | W. Ekkehard Blanz | Rev 1.20 created from primitive
+#   Tue Apr 30 2013 | W. Ekkehard Blanz | Added COPYING and GPL
+#   Fri May 03 2013 | W. Ekkehard Blanz | removed COPYING again
+#   Thu Oct 10 2013 | W. Ekkehard Blanz | added __pycache__
+#   Thu Oct 31 2013 | W. Ekkehard Blanz | added *.modified
+#   Thu Mar 06 2014 | W. Ekkehard Blanz | added shared libraries
+#   Thu Feb 23 2017 | W. Ekkehard Blanz | added *.ilg and *.ind
+#   Fri Sep 01 2017 | W. Ekkehard Blanz | added Windows-specific files
+#   Wed Feb 14 2018 | W. Ekkehard Blanz | added more Windows-specific files
+#   Fri Jan 11 2019 | W. Ekkehard Blanz | added more Windows-specific files
+#   Tue Jul 16 2019 | W. Ekkehard Blanz | added logs and kdwev files back
+#                   |                   |
+#
+
+# we want to ignore docs (they can be re-built)
+docs
+# the GPL is always the same
+GPL
+
+# these are generated during debug and/or tracing
+tracelevel.rc
+
+# Python files we don't need in git
+*.pyc
+__pycache__
+
+# These are temporary Arduino files
+*.lst
+*.eep
+*.elf
+*.hex
+
+# These are temporary LaTeX files
+*.aux
+*.blg
+*.bbl
+*.toc
+*.eps
+*.ilg
+*.ind
+*.out
+*.synctex.gz
+
+# These are temporary GEDA files
+*.rqk
+*.gbr
+*.cnc
+*.xy
+*.bom
+*.net
+
+# This is an Office Libre lock file
+.~lock.*
+
+# Here starts the Linux-specific part that has no use under Windows
+.directory
+.depend
+core
+*~
+.*.swp
+*.map
+*.[oa]
+*.so
+*.kate-swp
+*.gcda
+*.gcno
+*.backup
+.kdev4/*
+*.kdev4
+
+# Here starts the Windows-specific part that has no use under Linux
+.vs
+__vm
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.users
+*.pyproj
+readme.txt
+*.obj
+*.exe
+*.lib
+*.dll
+
+# Here are the QtCreator files
+*.creator*
+*.files
+*.includes
+*.config
+

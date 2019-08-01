@@ -1,0 +1,8 @@
+Running mnistNaive on ARMv7 Processor rev 4 (v7l), 32 bits
+with 4 cores, running at 1.2000 GHz
+GPU acceleration is not available
+
+
+Training time: 255.792 s
+Test time:       8.070 s
+Classification accuracy on test data: 98.02 %

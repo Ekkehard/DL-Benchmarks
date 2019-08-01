@@ -1,0 +1,28 @@
+Running mnist1D on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time:  29.220 s
+Test time:       0.685 s
+Classification accuracy on test data: 97.76 %
+
+
+Net architecture:
+Input Shape:  (None, 784)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 512)               401920    
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                5130      
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________

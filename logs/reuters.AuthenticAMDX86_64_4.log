@@ -1,0 +1,30 @@
+Running reuters on AMD Phenom(tm) II X6 1055T Processor, 64 bits
+with 6 cores, running at 3.2500 GHz
+Installed memory: 8 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:    8982 samples
+Test size:        2246 samples
+Training time:   8.866 s
+Test time:       0.800 s
+Classification accuracy on test data: 78.98 %
+
+
+Net architecture:
+Input Shape:  (None, 10000)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 64)                640064    
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3 (Dense)              (None, 46)                2990      
+=================================================================
+Total params: 647,214
+Trainable params: 647,214
+Non-trainable params: 0
+_________________________________________________________________

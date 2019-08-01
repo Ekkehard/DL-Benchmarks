@@ -1,0 +1,30 @@
+Running reuters on ARMv7 Processor rev 4 (v7l), 32 bits
+with 4 cores, running at 1.2000 GHz
+Installed memory: 1 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:    8982 samples
+Test size:        2246 samples
+Training time:  84.739 s
+Test time:       1.589 s
+Classification accuracy on test data: 79.07 %
+
+
+Net architecture:
+Input Shape:  (None, 10000)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 64)                640064    
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_3 (Dense)              (None, 46)                2990      
+=================================================================
+Total params: 647,214
+Trainable params: 647,214
+Non-trainable params: 0
+_________________________________________________________________

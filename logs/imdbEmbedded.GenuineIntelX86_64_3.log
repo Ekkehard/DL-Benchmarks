@@ -1,0 +1,30 @@
+Running imdbEmbedded on Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz, 64 bits
+with 4 cores, running at 1.9000 GHz
+Installed memory: 4 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:   25000 samples
+Test size:       25000 samples
+Training time:  26.914 s
+Test time:       0.582 s
+Classification accuracy on test data: 81.86 %
+
+
+Net architecture:
+Input Shape:  (None, 50)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding_1 (Embedding)      (None, 50, 8)             80000
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 400)               0
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 401
+=================================================================
+Total params: 80,401
+Trainable params: 80,401
+Non-trainable params: 0
+_________________________________________________________________

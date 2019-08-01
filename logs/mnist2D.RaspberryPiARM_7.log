@@ -1,0 +1,8 @@
+Running mnistBetter on ARMv7 Processor rev 4 (v7l), 32 bits
+with 4 cores, running at 1.2000 GHz
+GPU acceleration is not available
+
+
+Training time: 2337.264 s
+Test time:      26.819 s
+Classification accuracy on test data: 99.18 %

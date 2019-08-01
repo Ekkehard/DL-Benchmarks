@@ -1,0 +1,33 @@
+Running mpiWeatherConv on ARMv7 Processor rev 4 (v7l), 32 bits
+with 4 cores, running at 1.2000 GHz
+Installed memory: 1 GB
+Floatingpoint precision: float32
+NVIDIA GPU acceleration is not available
+
+
+Training size:  200000 samples
+Test size:      120406 samples
+Training time: 4670.288 s
+Test time:     321.806 s
+
+
+Net architecture:
+Input Shape:  (None, None, 21)
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv1d_1 (Conv1D)            (None, None, 32)          3392      
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, None, 32)          0         
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, None, 32)          5152      
+_________________________________________________________________
+gru_1 (GRU)                  (None, 32)                6240      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 14,817
+Trainable params: 14,817
+Non-trainable params: 0
+_________________________________________________________________
