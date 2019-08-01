@@ -26,7 +26,7 @@
 #
 #      Date         | Author         | Modification
 #  -----------------+----------------+------------------------------------------
-#   Sat Jul 06 2019 | Ekkehard Blanz | created
+#   Sat Jul 06 2019 | Ekkehard Blanz | converted from Chollet's book
 #                   |                |
 
 import time

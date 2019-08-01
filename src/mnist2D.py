@@ -25,7 +25,7 @@
 #
 #      Date         | Author         | Modification
 #  -----------------+----------------+------------------------------------------
-#   Wed May 22 2019 | Ekkehard Blanz | created
+#   Wed May 22 2019 | Ekkehard Blanz | converted from Chollet's book
 #   Sat Jul 06 2019 | Ekkehard Blanz | converted to benchmarkable function
 #                   |                |
 

@@ -1,4 +1,28 @@
 #!/bin/bash
+#
+# Bash Script Implementation: runall
+#
+# Version   : 1.0.0
+#
+# Purpose   : Run all benchmark applications numerous times
+#
+# Synopsis  : ./runall
+#
+# Comments  :
+#
+# Known Bugs: none
+#
+# Author    : W. Ekkehard Blanz, <Ekkehard.Blanz@gmail.com>, (C) 2019
+#
+# Copyright : See COPYING file that comes with this distribution
+#
+#
+# File history:
+#     Date          | Author            | Modification
+#  -----------------+-------------------+---------------------------------------
+#   Thu Aug 01 2019 | W. Ekkehard Blanz | created
+#                   |                   |
+#
 
 for i in 1 2 3 4; do
     ./benchmark.py dogsVsCats $i

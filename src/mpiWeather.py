@@ -25,7 +25,7 @@
 #
 #      Date         | Author         | Modification
 #  -----------------+----------------+------------------------------------------
-#   Wed Jul 17 2019 | Ekkehard Blanz | created
+#   Wed Jul 17 2019 | Ekkehard Blanz | converted from Chollet's book
 #                   |                |
 
 import os
