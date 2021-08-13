@@ -1,0 +1,29 @@
+Running mpiWeather on Apple M1, 64 bits
+with 8 cores, running at ??? Hz
+Installed memory: 16 GB
+Floatingpoint precision: float32
+GPU acceleration is available and used
+Using TensorFlow Version 2.4.0-rc0
+
+
+Training size:  200000 samples
+Test size:      120406 samples
+Training time: 12375.902 s
+Test time:     278.562 s
+
+
+Net architecture:
+Input Shape:  (None, None, 21)
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+gru (GRU)                    (None, 32)                5280      
+_________________________________________________________________
+dense (Dense)                (None, 1)                 33        
+=================================================================
+Total params: 5,313
+Trainable params: 5,313
+Non-trainable params: 0
+_________________________________________________________________

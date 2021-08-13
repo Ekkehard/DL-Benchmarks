@@ -1,0 +1,30 @@
+Running mnist1D on Apple M1, 64 bits
+with 8 cores, running at ??? Hz
+Installed memory: 16 GB
+Floatingpoint precision: float32
+GPU acceleration is available but not used
+Using TensorFlow Version 2.4.0-rc0
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time:   3.540 s
+Test time:       0.147 s
+Classification accuracy on test data: 97.79 %
+
+
+Net architecture:
+Input Shape:  (None, 784)
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 512)               401920    
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                5130      
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________

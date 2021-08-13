@@ -1,0 +1,32 @@
+Running imdbEmbedded on Apple M1, 64 bits
+with 8 cores, running at ??? Hz
+Installed memory: 16 GB
+Floatingpoint precision: float32
+GPU acceleration is available but not used
+Using TensorFlow Version 2.4.0-rc0
+
+
+Training size:   25000 samples
+Test size:       25000 samples
+Training time:   3.076 s
+Test time:       0.235 s
+Classification accuracy on test data: 81.42 %
+
+
+Net architecture:
+Input Shape:  (None, 50)
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding (Embedding)        (None, 50, 8)             80000     
+_________________________________________________________________
+flatten (Flatten)            (None, 400)               0         
+_________________________________________________________________
+dense (Dense)                (None, 1)                 401       
+=================================================================
+Total params: 80,401
+Trainable params: 80,401
+Non-trainable params: 0
+_________________________________________________________________

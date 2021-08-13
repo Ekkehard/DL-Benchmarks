@@ -1,0 +1,32 @@
+Running reuters on Apple M1, 64 bits
+with 8 cores, running at ??? Hz
+Installed memory: 16 GB
+Floatingpoint precision: float32
+GPU acceleration is available and used
+Using TensorFlow Version 2.4.0-rc0
+
+
+Training size:    8982 samples
+Test size:        2246 samples
+Training time:   2.662 s
+Test time:       0.899 s
+Classification accuracy on test data: 78.14 %
+
+
+Net architecture:
+Input Shape:  (None, 10000)
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 64)                640064    
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_2 (Dense)              (None, 46)                2990      
+=================================================================
+Total params: 647,214
+Trainable params: 647,214
+Non-trainable params: 0
+_________________________________________________________________

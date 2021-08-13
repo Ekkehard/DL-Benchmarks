@@ -1,0 +1,42 @@
+Running mnist2D on Apple M1, 64 bits
+with 8 cores, running at ??? Hz
+Installed memory: 16 GB
+Floatingpoint precision: float32
+GPU acceleration is available and used
+Using TensorFlow Version 2.4.0-rc0
+
+
+Training size:   60000 samples
+Test size:       10000 samples
+Training time:  43.549 s
+Test time:       2.094 s
+Classification accuracy on test data: 99.25 %
+
+
+Net architecture:
+Input Shape:  (None, 28, 28, 1)
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 26, 26, 32)        320       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 13, 13, 32)        0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 11, 11, 64)        18496     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 5, 5, 64)          0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 3, 3, 64)          36928     
+_________________________________________________________________
+flatten (Flatten)            (None, 576)               0         
+_________________________________________________________________
+dense (Dense)                (None, 64)                36928     
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                650       
+=================================================================
+Total params: 93,322
+Trainable params: 93,322
+Non-trainable params: 0
+_________________________________________________________________
