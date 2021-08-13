@@ -106,6 +106,7 @@ readme.txt
 .idea/
 .DS_Store
 *.iml
+*.numbers
 
 # Here are the QtCreator files
 *.creator*
@@ -115,4 +116,4 @@ readme.txt
 
 # And here are the local customizations
 doc/Benchmarks.log
-
+Untitled*.ipynb
