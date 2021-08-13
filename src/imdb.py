@@ -3,7 +3,7 @@
 ##
 # @file       imdb.py
 #
-# @version    1.0.0
+# @version    1.0.1
 #
 # @par Purpose
 #             Run a IMDB movie review classification task using keras.
@@ -17,7 +17,7 @@
 
 # Known Bugs: none
 #
-# @author     Ekkehard Blanz <Ekkehard.Blanz@gmail.com> (C) 2019
+# @author     Ekkehard Blanz <Ekkehard.Blanz@gmail.com> (C) 2019-2021
 #
 # @copyright  See COPYING file that comes with this distribution
 #
@@ -26,7 +26,10 @@
 #      Date         | Author         | Modification
 #  -----------------+----------------+------------------------------------------
 #   Sat Jul 06 2019 | Ekkehard Blanz | converted from Chollet's book
+#   Thu Jul 01 2021 | Ekkehard Blanz | omitted pickle-fix on Mac
 #                   |                |
+
+from sys import platform
 
 import time
 import numpy as np
@@ -48,18 +51,22 @@ def vectorizeSequences( sequences, dtype, dimension=10000 ):
 
 
 def testRun( dtype ):
-    # save np.load
-    npLoadOld = np.load
 
-    # modify the default parameters of np.load
-    np.load = lambda *a,**k: npLoadOld(*a, allow_pickle=True, **k)
+    if platform != "darwin":
+        # save np.load on everything but Mac, which takes care of that in their
+        # own TensorFlow
+        npLoadOld = np.load
+        # modify the default parameters of np.load
+        np.load = lambda *a,**k: npLoadOld( *a, allow_pickle=True, **k )
+
 
     # call load_data with allow_pickle implicitly set to true
     (trainData, trainLabels), (testData, testLabels) = \
         imdb.load_data( num_words=10000 )
 
-    # restore np.load for future normal usage
-    np.load = npLoadOld
+    if platform != "darwin":
+        # restore np.load for future normal usage
+        np.load = npLoadOld
 
     xTrain = vectorizeSequences( trainData, dtype )
     xTest = vectorizeSequences( testData, dtype )

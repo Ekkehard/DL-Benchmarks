@@ -2,17 +2,18 @@
 #
 # Bash Script Implementation: runall
 #
-# Version   : 1.0.0
+# Version   : 1.1.1
 #
 # Purpose   : Run all benchmark applications numerous times
 #
-# Synopsis  : ./runall
+# Synopsis  : ./runall [mlc-device]
+#             where mlc-device can be one of "cpu", "gpu", and "any".
 #
 # Comments  :
 #
 # Known Bugs: none
 #
-# Author    : W. Ekkehard Blanz, <Ekkehard.Blanz@gmail.com>, (C) 2019
+# Author    : W. Ekkehard Blanz, <Ekkehard.Blanz@gmail.com>, (C) 2019-2021
 #
 # Copyright : See COPYING file that comes with this distribution
 #
@@ -21,18 +22,20 @@
 #     Date          | Author            | Modification
 #  -----------------+-------------------+---------------------------------------
 #   Thu Aug 01 2019 | W. Ekkehard Blanz | created
+#   Thu jun 30 2021 | W. Ekkehard Blanz | added mlc device option
+#   Thu Jul 02 2021 | W. Ekkehard Blanz | now calls benchmark with python
 #                   |                   |
 #
 
 for i in 1 2 3 4; do
-    ./benchmark.py dogsVsCats $i
-    ./benchmark.py imdbEmbedded $i
-    ./benchmark.py imdb $i
-    ./benchmark.py mnist1D $i
-    ./benchmark.py mnist2D $i
-    ./benchmark.py mpiWeatherConv $i
-    ./benchmark.py mpiWeather $i
-    ./benchmark.py reuters $i
+    python3 benchmark.py dogsVsCats $i $1
+    python3 benchmark.py imdbEmbedded $i $1
+    python3 benchmark.py imdb $i $1
+    python3 benchmark.py mnist1D $i $1
+    python3 benchmark.py mnist2D $i $1
+    python3 benchmark.py mpiWeatherConv $i $1
+    python3 benchmark.py mpiWeather $i $1
+    python3 benchmark.py reuters $i $1
 done
 
 exit 0

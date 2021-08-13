@@ -1,7 +1,7 @@
 #
 # .gitignore Implementation
 #
-# Version   : 2.2.0
+# Version   : 2.3.0
 #
 # Purpose   : Define all files to be ignored by git
 #
@@ -9,7 +9,7 @@
 #
 # Known Bugs: none
 #
-# Author    : W. Ekkehard Blanz <Ekkehard.Blanz@gmail.com> (C) 2013-2019
+# Author    : W. Ekkehard Blanz <Ekkehard.Blanz@gmail.com> (C) 2013-2021
 #
 # Copyright : See COPYING file that comes with this distribution
 #
@@ -28,6 +28,7 @@
 #   Wed Feb 14 2018 | W. Ekkehard Blanz | added more Windows-specific files
 #   Fri Jan 11 2019 | W. Ekkehard Blanz | added more Windows-specific files
 #   Tue Jul 16 2019 | W. Ekkehard Blanz | added logs and kdwev files back
+#   Wed Jun 30 2021 | W. Ekkehard Blanz | added Mac-specific part
 #                   |                   |
 #
 
@@ -100,6 +101,11 @@ readme.txt
 *.exe
 *.lib
 *.dll
+
+# And finally the Mac-specific part with no use anywhere else
+.idea/
+.DS_Store
+*.iml
 
 # Here are the QtCreator files
 *.creator*
