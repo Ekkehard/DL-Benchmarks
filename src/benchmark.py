@@ -5,7 +5,7 @@
 ##
 # @file       benchmark.py
 #
-# @version    1.3.0
+# @version    1.3.1
 #
 # @par Purpose
 #             Run a Python script using keras and tensorflow as a benchmark and
@@ -15,11 +15,11 @@
 #                 benchmark.py <module> [<exp. number>] [<mlc device]
 #             where exp. number is the number of the experiment and mlc device
 #             is one of "cpu" "gpu" or "any" where "any" lets TensorFlow decide
-#             which computational device to use, which is the default.  The
-#             sequence of the optional parameters is arbitrary.  If the
-#             experiment number is not given, it is not used as part of the log
-#             file name.  If the architecture has no GPU, the mlc device
-#             parameter is ignored if given.
+#             which computational device to use, which is the default.  This is
+#             only used on the Mac.  The sequence of the optional parameters is
+#             arbitrary.  If the experiment number is not given, it is not used
+#             as part of the log file name.  If the architecture has no GPU, the
+#             mlc device parameter is ignored if given.
 #
 # @par Comments
 #             The Python functions that this benchmark wrapper runs are supposed
@@ -51,6 +51,7 @@
 #   Sun Jul 28 2019 | Ekkehard Blanz | added addOn parameter
 #   Wed Jun 30 2021 | Ekkehard Blanz | added Mac M1 support and call to
 #                   |                | mlcompute.set_mlc_device()
+#   Thu Aug 19 2021 | Ekkehard Blanz | caught exception from missing mlcompute
 #                   |                |
 
 import sys
@@ -58,10 +59,13 @@ import os
 
 import cpuinfo
 import psutil
-# noinspection PyUnresolvedReferences
 import tensorflow as tf
-# noinspection PyUnresolvedReferences
-from tensorflow.python.compiler.mlcompute import mlcompute
+try:
+    from tensorflow.python.compiler.mlcompute import mlcompute
+    haveMlcompute = True
+except ModuleNotFoundError:
+    haveMlcompute = False
+
 
 log = ""
 
@@ -132,15 +136,9 @@ if len( sys.argv ) > 3:
 
 if hasGPU:
     if deviceName in ["gpu", "cpu", "any"]:
-        if deviceName == "gpu" and False:
-            # enabling this will lead to a segfault
-            print( "Switching off eager mode..." )
-            from tensorflow.python.framework.ops import disable_eager_execution
-            disable_eager_execution()
-            tf.config.run_functions_eagerly( False )
-            print( "Eager mode is " + str( tf.executing_eagerly() ) )
-        mlcompute.set_mlc_device( device_name=deviceName )
-        addOn = "_" + deviceName + addOn
+        if haveMlcompute:
+            mlcompute.set_mlc_device( device_name=deviceName )
+            addOn = "_" + deviceName + addOn
     else:
         print( "ERROR: Wrong command line argument: ", sys.argv[3] )
         sys.exit( 1 )
