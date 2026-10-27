@@ -29,91 +29,19 @@
 #   Fri Jan 11 2019 | W. Ekkehard Blanz | added more Windows-specific files
 #   Tue Jul 16 2019 | W. Ekkehard Blanz | added logs and kdwev files back
 #   Wed Jun 30 2021 | W. Ekkehard Blanz | added Mac-specific part
+#   Tue Oct 27 2026 | W. Ekkehard Blanz | only the patterns specific to this
+#                   |                   | repository - all others are in the
+#                   |                   | global ~/.gitignore (with Claude)
 #                   |                   |
 #
 
-# we want to ignore docs (they can be re-built)
-docs
-# the GPL is always the same
-GPL
 
-# these are generated during debug and/or tracing
-tracelevel.rc
-
-# Python files we don't need in git
-*.pyc
-__pycache__
-
-# These are temporary Arduino files
-*.lst
-*.eep
-*.elf
-*.hex
-
-# These are temporary LaTeX files
-*.aux
-*.blg
-#*.bbl
-*.toc
-*.eps
-*.ilg
-*.ind
-*.out
-*.synctex.gz
-
-# These are temporary GEDA files
-*.rqk
-*.gbr
-*.cnc
-*.xy
-*.bom
-*.net
-
-# This is an Office Libre lock file
-.~lock.*
-
-# Here starts the Linux-specific part that has no use under Windows
-.directory
-.depend
-core
-*~
-.*.swp
-*.map
-*.[oa]
-*.so
-*.kate-swp
-*.gcda
-*.gcno
-*.backup
-.kdev4/*
-*.kdev4
-
-# Here starts the Windows-specific part that has no use under Linux
-.vs
-__vm
-*.sln
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.users
-*.pyproj
-readme.txt
-*.obj
-*.exe
-*.lib
-*.dll
+# Everything that is ignored in all repositories is in the global ignore file
+# ~/.gitignore (git config --global core.excludesFile ~/.gitignore) - this
+# file only lists what is specific to this repository.
 
 # And finally the Mac-specific part with no use anywhere else
-.idea/
-.DS_Store
-*.iml
 *.numbers
 
-# Here are the QtCreator files
-*.creator*
-*.files
-*.includes
-*.config
-
 # And here are the local customizations
-doc/Benchmarks.log
 Untitled*.ipynb
